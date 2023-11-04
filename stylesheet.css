@@ -154,6 +154,12 @@ i {
     min-height: 90vh;
 }
 
+#dynamic-title {
+    min-height:  54.39px;
+    display: block;
+}
+  
+
 .welcome-message {
     font-size: 24px;
 }
