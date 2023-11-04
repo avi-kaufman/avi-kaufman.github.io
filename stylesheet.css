@@ -25,7 +25,7 @@ body {
     font-size: 1rem;
     padding-right: 2vw;
     padding-left: 2vw;
-    padding-top: 70px;
+    padding-top: 10vh;
 }
 
 a:link {
@@ -106,14 +106,18 @@ header {
 }
 
 .page {
-    min-height: 100vh;
-    margin-top: 5vh;
+    padding-top: 80px;
+    padding-bottom: 5vh;
+    border-bottom: 1px solid #ffffff;
+}
+
+.page:last-child {
+    border-bottom: none;
 }
 
 h2 {
     font-size: 2.5em;
     font-family: 'Nunito', sans-serif;
-    padding-top: 15vh;
 }
 
 .page-content{
@@ -130,11 +134,23 @@ ul {
     justify-content: center;
     align-items: center;  
     gap: 3rem;  
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    background-color: var(--background-color);
+    padding-top: 15px;
+    z-index: 1000;
 }
 
 i {
     font-size: 1.7rem;
+}
+
+#home {
+    padding-top: 18vh;
+    min-height: 90vh;
 }
 
 .welcome-message {
@@ -144,7 +160,8 @@ i {
 .about {
     background-color: var(--high-elements-background-color);
     border-radius: 10px;
-    padding: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     color: rgb(220, 217, 220);
 }
 
@@ -189,6 +206,10 @@ h3 {
 .contactMe p {
     font-family: cursive; 
     font-size: 1.5rem;
+}
+
+#contactMe {
+    padding-bottom: 2.5vh;
 }
 
 .contact-form {
@@ -255,13 +276,9 @@ h3 {
     transform: scale(0.95); /* Slightly scale down the button when clicked */
 }
 
-#resume {
-    margin-bottom: 120px;
-}
-
 .resume {
-    margin-bottom: 2rem;
-    margin-top: 15vh;
+    margin-bottom: 2.5rem;
+    margin-top: 83px;
     max-width: 900px;
     padding: 1.5em;
     background-color: #2e3a4b;  /* Darker Background Color */
