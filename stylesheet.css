@@ -37,8 +37,16 @@ a:link {
     color: var(--inside-link-color);
 }
 
+.inside-link:hover {
+    color: var(--inside-link-hover-color);
+}
+
 .outside-link {
     color: var(--outside-link-color);
+}
+
+.outside-link:hover {
+    color: var(--outside-link-hover-color);
 }
 
 header {
@@ -136,13 +144,13 @@ ul {
     align-items: center;  
     gap: 3rem;  
     padding-bottom: 1rem;
-    padding-top: 1rem;
     position: fixed;
     bottom: 0;
     background-color: var(--background-color);
     padding-top: 15px;
     z-index: 1000;
-    width: 100vw;
+    width: 100%;
+    left: 0;
 }
 
 i {
@@ -165,6 +173,7 @@ i {
 }
 
 .about {
+    max-width: 700px;
     background-color: var(--high-elements-background-color);
     border-radius: 10px;
     padding-left: 0.5rem;
@@ -220,6 +229,7 @@ h3 {
 }
 
 .contact-form {
+    max-width: 400px;
     width: 100%;
     margin: 2rem auto;
     padding: 1rem;
@@ -269,34 +279,34 @@ h3 {
     color: #000; 
     cursor: pointer; 
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    transition: background-color 0.3s ease, transform 0.3s ease;
     display: inline-block;
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #4488aa; /* Darker blue for hover */
-    transform: scale(1.05); /* Slightly scale the button on hover */
+    background-color: #4488aa; 
+    transform: scale(1.05); 
 }
 
 .contact-form input[type="submit"]:active {
-    background-color: #2c6d9f; /* Even darker blue for active state (when clicked) */
-    transform: scale(0.95); /* Slightly scale down the button when clicked */
+    background-color: #2c6d9f; 
+    transform: scale(0.95);
 }
 
 .resume {
     margin-bottom: 2.5rem;
     margin-top: 83px;
-    max-width: 900px;
+    max-width: 700px;
     padding: 1.5em;
-    background-color: #2e3a4b;  /* Darker Background Color */
+    background-color: #2e3a4b; 
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    color: #eaeaea;  /* Light Text Color for better contrast against dark background */
+    color: #eaeaea; 
 }
 
 .resume h2 {
     font-family: 'Nunito', sans-serif;
-    color: #ffa726;  /* Vibrant Yellow */
+    color: #ffa726; 
     text-align: center;
     border-bottom: 3px solid #ffa726;  
     padding-top: 0px;
@@ -311,28 +321,28 @@ h3 {
 }
 
 .resume .download-link a {
-    background-color: #26ff80;  /* Vibrant Yellow */
-    color: #2e3a4b;  /* Dark Text Color */
+    background-color: #26ff80;  
+    color: #2e3a4b;  
     text-decoration: none;
     border: none;
     padding: 0.5em 1.5em;
-    border-radius: 25px;  /* More Rounded Edges */
+    border-radius: 25px;
     font-weight: bold;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .resume .download-link a:hover {
-    transform: translateY(-2px);  /* Slight lift on hover */
+    transform: translateY(-2px);  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .resume h3 {
     font-family: 'Roboto', sans-serif;
-    color: #ffa726;  /* Vibrant Yellow */
+    color: #ffa726;  
     margin-top: 2em;
     margin-bottom: 1em;
-    border-bottom: 2px solid rgba(248, 231, 28, 0.5);  /* Semi-transparent Yellow */
+    border-bottom: 2px solid rgba(248, 231, 28, 0.5);
     padding-bottom: 0.1em;
 }
 
