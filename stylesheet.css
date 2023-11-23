@@ -215,6 +215,46 @@ h3 {
     font-size: 1.5rem;
 }
 
+/* Projects Section Styling */
+#projects {
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--high-elements-background-color);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--inside-link-color);
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: var(--inside-link-color);
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: var(--outside-link-color);
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: var(--outside-link-hover-color);
+}
+/* Projects Section Styling */
+
 .education p , .experience p{
     font-size: 1.2rem;
     padding-bottom: 1rem;
