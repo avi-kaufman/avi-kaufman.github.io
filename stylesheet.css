@@ -174,11 +174,19 @@ i {
 
 .about {
     max-width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--high-elements-background-color);
     border-radius: 10px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     color: rgb(220, 217, 220);
+}
+
+.about h2{
+    padding-top: 1.5rem;
+    text-align: center;
 }
 
 .personal-img {
@@ -294,6 +302,9 @@ h3 {
 }
 
 .resume {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2.5rem;
     margin-top: 83px;
     max-width: 700px;
