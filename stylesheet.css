@@ -184,7 +184,7 @@ i {
     color: rgb(220, 217, 220);
 }
 
-.about h2{
+.about h2 {
     padding-top: 1.5rem;
     text-align: center;
 }
@@ -215,20 +215,28 @@ h3 {
     font-size: 1.5rem;
 }
 
-/* Projects Section Styling */
-#projects {
-    margin: 20px;
+#projects-container {
+    margin-top: 30px;
     padding: 10px;
     background-color: var(--high-elements-background-color);
     color: var(--text-color);
     border-radius: 10px;
 }
 
+#projects-container .page-content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
 .project {
-    margin-bottom: 20px;
     padding: 10px;
     border: 1px solid var(--inside-link-color);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .project h3 {
@@ -248,12 +256,12 @@ h3 {
 .project a {
     color: var(--outside-link-color);
     text-decoration: none;
+    align-self: flex-start;
 }
 
 .project a:hover {
     color: var(--outside-link-hover-color);
 }
-/* Projects Section Styling */
 
 .education p , .experience p{
     font-size: 1.2rem;
